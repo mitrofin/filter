@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import User from "./User";
+/* import User from "./User"; */
+import UserList from "./usersList";
 
 import data from "./MOCK_DATA.json";
 
@@ -41,7 +42,9 @@ function App() {
               width: "200px",
             }}
           ></input>
-          <div className="user_container">
+          <UserList users={users} />
+
+          {/*           <div className="user_container">
             <ul className="list">
               {users.map((user, index) => {
                 return (
@@ -58,7 +61,7 @@ function App() {
                 );
               })}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
