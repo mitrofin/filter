@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-size: large;
   align-items: center;
   margin: 0 auto;
   display: flex;
@@ -12,6 +13,12 @@ body {
   align-content: center;
   /* flex-direction: row; */
   align-items: center;
+  background-image: url(../src/assets/find.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.list {
+  list-style-type: none;
 }
 
 code {
@@ -19,8 +26,20 @@ code {
     monospace;
 }
 .App {
-  display: block;
-  display: block;
+  display: flow;
   margin-top: 50px;
   text-align: center;
+}
+.user_wraper {
+  display: flex;
+  flex-direction: column;
+}
+.user {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  border: solid;
+  border-radius: 5px;
+  background-color: beige;
+  font-weight: 600;
 }
